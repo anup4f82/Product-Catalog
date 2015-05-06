@@ -11,10 +11,9 @@ $(document).ready(function(){
 		dataType: 'json',
 		crossDomain: true 
 	}).done(function(res){
-		console.log("Response======================"+JSON.stringify(res));
 		res.products.forEach(function(item){
 			$('.bxslider').append('<a href="#'+item.id+'" class="open-popup-link"><li><img src="../images/mb_slideshow_'+item.id+'.png"/></li></a>');
-			$('body').append('<div id="'+item.id+'" class="white-popup mfp-hide"><p>Name:'+item.name+'</p><p>Description:'+item.description+'</p></div>')
+			$('body').append('<div id="'+item.id+'" class="popup mfp-hide"><p>Name: '+item.name+'</p></br><p>Description: '+item.description+'</p></div>')
 		})
 
 		bxslider.reloadSlider();

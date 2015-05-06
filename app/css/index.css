@@ -25,15 +25,26 @@ p, h1, h2, h3, h4, h5, cite, a,sup {
 	margin: 0 0;
 	padding: 0 0;
 }
+
+li img {
+	width: 80%;
+	height: 60%;
+}
+
+#container {
+	width: 80%;
+	height:80%;
+	
+}
 #description {
 	position:fixed;
 	top: 20%;
 	border: 1px solid red;
 	
 }
-.white-popup {
+.popup {
   position: relative;
-  background: #FFF;
+  background: #FFFFCC;
   padding: 20px;
   width: auto;
   max-width: 500px;
